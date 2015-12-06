@@ -1,7 +1,97 @@
 <html>
 <head>
 <title>SMART MIRROR</title>
+<head>
 
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
+<script>
+if ( annyang ) 
+{
+        
+         var commands = 
+        {
+            '(what can i say)(what can i)(what can)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/commands.html';
+            }
+
+	   
+        };
+        
+         var commands1 = 
+        {
+            '(map)(ma)(mappp)(maps)(mapss)(mps)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/map.html';
+            }
+
+	   
+        };
+         var commands2 = 
+        {
+            '(weather)(wther)(wether)(weth)(wethr)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/weather.html';
+            }
+
+	   
+        };
+         var commands3 = 
+        {
+            '(movie)(movi)(mov)(move)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/movie.html';
+            }
+
+	   
+        };
+        
+         var commands4 = 
+        {
+            '(news)(new)(nes)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/news.html';
+            }
+
+	   
+        };
+         var commands5 = 
+        {
+            '(home)(om)(ome)(home)(wake up)(wake)(wak up)(wak)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/main.html';
+            }
+
+	   
+        };
+        
+         var commands6 = 
+        {
+            '(sleep)(leep)(slep)(sllep)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/';
+            }
+
+	   
+        };
+        //.. Add our commands to annyang object
+        annyang.addCommands(commands);
+        annyang.addCommands(commands1);
+        annyang.addCommands(commands2);
+        annyang.addCommands(commands3);
+        annyang.addCommands(commands4);
+        annyang.addCommands(commands5);
+        annyang.addCommands(commands6);
+         annyang.setLanguage('en-IN')
+        //... Start listening. You can call this here, or attach this call to an event, button, etc.
+        annyang.start({continuous: false });
+
+
+
+}
+</script>
+</head>
 
 
 </head>
