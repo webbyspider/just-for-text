@@ -10,11 +10,11 @@ if (annyang) {
 // Let's define our first command. First the text we expect, and then the function it     should call
 var commands = {
 'hey': function() {
-  slideDown("slow");
+ 
       scrollTo("#hello");
 }
 };
-
+annyang.setLanguage('en-IN');
 // Initialize annyang with our commands
 annyang.init(commands);
 
@@ -22,7 +22,7 @@ annyang.init(commands);
 annyang.start();
 }
 </script>
-    annyang.setLanguage('en-IN');
+    
 
     
   
