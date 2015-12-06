@@ -58,12 +58,21 @@ if ( annyang )
         {
             'home': function() 
             {
-              window.location.href = 'https://webbyspider.github.io/webbyspider/';
+              window.location.href = 'https://webbyspider.github.io/webbyspider/main.html';
             }
 
 	   
         };
         
+         var commands6 = 
+        {
+            'sleep': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/';
+            }
+
+	   
+        };
         //.. Add our commands to annyang object
         annyang.addCommands(commands);
         annyang.addCommands(commands1);
@@ -71,6 +80,7 @@ if ( annyang )
         annyang.addCommands(commands3);
         annyang.addCommands(commands4);
         annyang.addCommands(commands5);
+        annyang.addCommands(commands6);
          annyang.setLanguage('en-IN')
         //... Start listening. You can call this here, or attach this call to an event, button, etc.
         annyang.start({continuous: false });
