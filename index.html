@@ -17,7 +17,7 @@
   if (annyang) {
 
     
-        var commands = function() {
+        var commands1 = function() {
       window.location.href = 'https://github.com/TalAter/annyang';
     }
 
@@ -27,11 +27,11 @@
     //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
     var commands = {
       
-      'commands':   commands,
-      'map':        map,
-      'weather':    weather,
-      'news':       news,
-      'movie':      movie,
+      'commands':   commands1,
+      'map':        map1,
+      'weather':    weather1,
+      'news':       news1,
+      'movie':      movie1,
     };
 
     // OPTIONAL: activate debug mode for detailed logging in the console
@@ -39,7 +39,12 @@
 
     // Add voice commands to respond to
     annyang.addCommands(commands);
-
+     annyang.addCommands('commands');
+      annyang.addCommands('map');
+       annyang.addCommands('weather');
+        annyang.addCommands('news');
+         annyang.addCommands('movie');
+         
     // OPTIONAL: Set a language for speech recognition (defaults to English)
     // For a full list of language codes, see the documentation:
     // https://github.com/TalAter/annyang/blob/master/docs/README.md#languages
