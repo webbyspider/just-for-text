@@ -10,30 +10,31 @@ if (annyang) {
 // Let's define our first command. First the text we expect, and then the function it     should call
 var commands = {
 'hey': function() {
- alert("hello");
-      scrollTo("#hello");
+   $("#hello").slideDown("slow");
+      scrollTo("#section_hello");
+      
 }
 };
 
 // Initialize annyang with our commands
 annyang.init(commands);
 
-
 // Start listening. You can call this here, or attach this call to an event, button, etc.
 annyang.start();
 }
 </script>
-    
+    annyang.setLanguage('en-IN');
 
     
   
 </head>
 <body bgcolor=black>
 
- 
+ <section id="section_header>"
 <font color=white size=45>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<section id="hello">
+</section>
+<section id="section_hello">
 <center><iframe src="http://free.timeanddate.com/clock/i4ysnvba/n1597/tlin/fs45/fcfff/tc000/pc000/ftb/tt0/tw0/tm1/ts1/tb4" frameborder="0" 
 
 width="265" height="100">nd --></iframe>
