@@ -1,6 +1,97 @@
 <html>
-<head>
+<head><head>
 
+
+ <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
+<script>
+if ( annyang ) 
+{
+        
+         var commands = 
+        {
+            '(what can i say)(what can i)(what can)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/commands.html';
+            }
+
+	   
+        };
+        
+         var commands1 = 
+        {
+            '(map)(ma)(mappp)(maps)(mapss)(mps)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/map.html';
+            }
+
+	   
+        };
+         var commands2 = 
+        {
+            '(weather)(wther)(wether)(weth)(wethr)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/weather.html';
+            }
+
+	   
+        };
+         var commands3 = 
+        {
+            '(movie)(movi)(mov)(move)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/movie.html';
+            }
+
+	   
+        };
+        
+         var commands4 = 
+        {
+            '(news)(new)(nes)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/news.html';
+            }
+
+	   
+        };
+         var commands5 = 
+        {
+            '(home)(om)(ome)(home)(wake up)(wake)(wak up)(wak)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/main.html';
+            }
+
+	   
+        };
+        
+         var commands6 = 
+        {
+            '(sleep)(leep)(slep)(sllep)': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/';
+            }
+
+	   
+        };
+        //.. Add our commands to annyang object
+        annyang.addCommands(commands);
+        annyang.addCommands(commands1);
+        annyang.addCommands(commands2);
+        annyang.addCommands(commands3);
+        annyang.addCommands(commands4);
+        annyang.addCommands(commands5);
+        annyang.addCommands(commands6);
+         annyang.setLanguage('en-IN')
+        //... Start listening. You can call this here, or attach this call to an event, button, etc.
+        annyang.start({continuous: false });
+
+
+
+}
+</script>
+</head>
+  
+</head>
 <body bgcolor=black>
 <center>
 <!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://timesofindia.feedsportal.com/c/33039/f/533916/index.rss",rssmikle_frame_width: "500",rssmikle_frame_height: "1500",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "45",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "Off",rssmikle_title: "on",rssmikle_title_sentence: "NEWS",rssmikle_title_link: "",rssmikle_title_bgcolor: "#000308",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#FFFEFC",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#FFFFFF",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:300px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!-- end feedwind code -->
