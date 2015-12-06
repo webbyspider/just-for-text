@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>smart mirror</title>
+ 
+  <script>
+    var annyangScript = document.createElement('script');
+      annyangScript.src = "//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"
+    document.write(annyangScript.outerHTML)
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  "use strict";
+
+
+  if (annyang) {
+
+    
+        var commands = function() {
+      window.location.href = 'https://github.com/TalAter/annyang';
+    }
+
+    // define our commands.
+    // * The key is the phrase you want your users to say.
+    // * The value is the action to do.
+    //   You can pass a function, a function name (as a string), or write your function as part of the commands object.
+    var commands = {
+      
+      'list commands':   listcommands,
+      'map':        map,
+      'weather':    weather,
+      'news':       news,
+      'movie':      movie,
+    };
+
+    // OPTIONAL: activate debug mode for detailed logging in the console
+    annyang.debug();
+
+    // Add voice commands to respond to
+    annyang.addCommands(commands);
+
+    // OPTIONAL: Set a language for speech recognition (defaults to English)
+    // For a full list of language codes, see the documentation:
+    // https://github.com/TalAter/annyang/blob/master/docs/README.md#languages
+    annyang.setLanguage('en-IN');
+
+    // Start listening. You can call this here, or attach this call to an event, button, etc.
+    annyang.start();
+  } else {
+    $(document).ready(function() {
+      $('#unsupported').fadeIn('fast');
+    });
+  }
+
+
+  </script>
+  
+</head>
+<body bgcolor=black>
+
+ 
+<font color=white size=45>
+
+<center><iframe src="http://free.timeanddate.com/clock/i4ysnvba/n1597/tlin/fs45/fcfff/tc000/pc000/ftb/tt0/tw0/tm1/ts1/tb4" frameborder="0" 
+
+width="265" height="100">nd --></iframe>
+</center>
+<br><br><br><br><br><br><br><br>
+<center>Hi, SEXY!!!! </center>
+<br>
+<br>
+<br>
+<center>say "commands" to get the list of commands
+</center>
+</body>
+</html>
