@@ -45,12 +45,22 @@ if ( annyang )
 	   
         };
         
+         var commands4 = 
+        {
+            'news': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/news.html';
+            }
+
+	   
+        };
         
         //.. Add our commands to annyang object
         annyang.addCommands(commands);
         annyang.addCommands(commands1);
         annyang.addCommands(commands2);
         annyang.addCommands(commands3);
+        annyang.addCommands(commands4);
          annyang.setLanguage('en-IN')
         //... Start listening. You can call this here, or attach this call to an event, button, etc.
         annyang.start();
