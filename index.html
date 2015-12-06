@@ -26,12 +26,21 @@ if ( annyang )
 
 	   
         };
-        
+         var commands2 = 
+        {
+            'weather': function() 
+            {
+              window.location.href = 'https://webbyspider.github.io/webbyspider/weather.html';
+            }
+
+	   
+        };
         
         
         //.. Add our commands to annyang object
         annyang.addCommands(commands);
         annyang.addCommands(commands1);
+        annyang.addCommands(commands2);
 
          annyang.setLanguage('en-IN')
         //... Start listening. You can call this here, or attach this call to an event, button, etc.
